@@ -4,6 +4,9 @@ import { Card } from '@/components/Card'
 import { Pagination } from '@/components/Pagination'
 import type { Metadata } from 'next/types'
 
+export const dynamic = 'force-static'
+export const revalidate = 600
+
 // set articles limit per page
 const articlesLimit = 3
 
