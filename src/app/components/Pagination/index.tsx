@@ -29,7 +29,7 @@ export const Pagination = (props: { page: number; totalPages: number }) => {
             <PaginationPrevious
               disabled={!hasPrevPage}
               onClick={() => {
-                router.push(`?page=${page - 1}`)
+                router.push(`/articles/${page - 1}`)
               }}
             />
           </PaginationItem>
@@ -44,7 +44,7 @@ export const Pagination = (props: { page: number; totalPages: number }) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => {
-                  router.push(`?page=${page - 1}`)
+                  router.push(`/articles/${page - 1}`)
                 }}
               >
                 {page - 1}
@@ -56,7 +56,7 @@ export const Pagination = (props: { page: number; totalPages: number }) => {
             <PaginationLink
               isActive
               onClick={() => {
-                router.push(`?page=${page}`)
+                router.push(`/articles/${page}`)
               }}
             >
               {page}
@@ -67,7 +67,7 @@ export const Pagination = (props: { page: number; totalPages: number }) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => {
-                  router.push(`?page=${page + 1}`)
+                  router.push(`/articles/${page + 1}`)
                 }}
               >
                 {page + 1}
@@ -85,7 +85,7 @@ export const Pagination = (props: { page: number; totalPages: number }) => {
             <PaginationNext
               disabled={!hasNextPage}
               onClick={() => {
-                router.push(`?page=${page + 1}`)
+                router.push(`/articles/${page + 1}`)
               }}
             />
           </PaginationItem>
