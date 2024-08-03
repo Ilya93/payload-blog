@@ -16,6 +16,8 @@ export const Articles: CollectionConfig = {
         return `${process.env.NEXT_PUBLIC_SERVER_URL}${path}`
       },
     },
+    preview: (doc) =>
+      generatePreviewPath({ path: `/${typeof doc?.slug === 'string' ? doc.slug : ''}` }),
     useAsTitle: 'title',
   },
   access: {
