@@ -5,7 +5,7 @@ import { Pagination } from '@/components/Pagination'
 import type { Metadata } from 'next/types'
 
 export const dynamic = 'force-static'
-export const revalidate = 60
+export const revalidate = 10
 
 // set articles limit per page
 const articlesLimit = 3

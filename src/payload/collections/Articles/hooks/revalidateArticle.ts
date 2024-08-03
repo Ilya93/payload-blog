@@ -17,7 +17,6 @@ export const revalidateArticle: CollectionAfterChangeHook<Article> = ({
     revalidatePath(path)
   }
 
-  // If the post was previously published, we need to revalidate the old path
   if (previousDoc._status === 'published' && doc._status !== 'published') {
     const oldPath = `/${previousDoc.slug}`
 
