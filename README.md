@@ -13,6 +13,10 @@ password: password123!
 
 I used Payload CMS beta v3 for this project
 
+## Media Storage
+
+I used @payloadcms/storage-s3 for media storage
+
 ## Deployment
 
 This project is deployed using next js standalone build over GCP [Cloud run](https://cloud.google.com/run?hl=ru)
